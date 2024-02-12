@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #040F0F;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+.body-jlv {
+    background-color: #040F0F;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+/* formato para el header y la barra de navegacion */
+
+.header {
+    background-color: transparent;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-nav-link {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.menu-nav-link:hover {
+    background-color: whitesmoke;
+    color: darkslategray;
+    transition: 0.5s;
+}
+
+.logo-header {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.menu-nav-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+
+/* formato para el home */
+
+.img-type-1 {
+    width: 100%;
+    height: auto;
+}
+
+.h1-home {
+    margin: 30px 110px;
+    text-align: left;
+    font-size: xx-large;
+}
+
+
+.p-central {
+    margin: 40px 110px;
+    text-align: justify;
+    font-size: large;
+    
+}
+
+.button-mas {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    margin-left: 110px;
+    margin-right: 110px;
+    display: flex;
+    
+}
+.grid-plus-img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4,auto);
+    width: 50%;
+    text-align: center;
+}
+
+.grid-item {
+    background-color: gray;
+    padding: 10px;
+}
+
+.item-1 {
+    font-size: xx-large;
+}
+
+
+.img-type-2 {
+width: 40%;
+height: auto;
+display: inline;
+
+}
+
+.h2-home {
+    margin-top: 40px;
+    margin-left: 110px;
+}
+
+.p-2 {
+    margin-left: 110px;
+    margin-top: 20px;
+    margin-right: 110px;
+    text-align: justify;
+}
+
+.contenedor-beats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    text-align: center;
+}
+
+
+.beat-sample {
+    display: inline-block;
+    background-color: #45423f;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin: 40px 20px;
+   
+}
+
+.fa-solid {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: x-large;
+    margin-top: 20px;
+}
+
+.beat-img {
+    width: 140px;
+    height: auto;
+    margin: 20px;
+}
+
+
+/* formato para el footer */
+
+
+
+.logo-footer {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 80px 0 10px 0;
+}
+
+
+.social-media {
+    font-size: xx-large;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.fa-brands {
+    color: whitesmoke;
+    
+}
+
+
+.p-footer {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+
+/* style para la pagina servicios */
+
+.img-top-pages {
+    width: 100%;
+    height: auto;
+}
+
+.h1-pages {
+    text-align: center; /* ver bien como hacer para centrar los elementos y ponerlos sobre la imagen */
+
+}
+
+.h2-pages {
+    margin: 30px 110px;
+    text-align: left;
+}
+
+
+
+/* style para la pagina de artistas */
+
+.artists-list {
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.artists-img {
+    width: 140px;
+    height: auto;
+    margin: 20px;
+}
+
+ul.artists-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* para la pagina de contacto */
+
+.mapa-y-form {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.contact-form ul {
+    list-style: none;
+}
+
+
+/* media queries para ajustar pantallas */
+
+@media (max-width: 576px) {
+    
+    .nav-menu {
+        flex-wrap: wrap;
+    }
+    
+    .grid-plus-img {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        margin-bottom: 20px;
+    }
+    .grid-item {
+        padding: 10px;
+    }
+    
+    .item-1 {
+        font-size: large;
+    }
+
+    .item-2 {
+        font-size: small;
+    }
+    
+    .img-type-2 {
+        margin-bottom: 20px;
+    }
+
+    .mapa-y-form {
+        flex-wrap: wrap;
+    }
+
+}
+    
+@media (min-width: 577px) and (max-width: 960px) {
+    .grid-plus-img {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        margin-bottom: 20px;
+    }
+
+    .img-type-2 {
+        margin-bottom: 20px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width: 961px) {
+
+}
