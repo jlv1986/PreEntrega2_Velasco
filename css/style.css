@@ -301,6 +301,20 @@ ul.artists-list {
 }
 
 
+/* para las animaciones */
+
+.rotate-center {
+    animation:rotate-center .6s ease-in-out both
+}
+
+@keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+
+
+.beat-img:hover {
+    animation:rotate-center .6s ease-in-out both
+}
+
+
 /* media queries para ajustar pantallas */
 
 @media (max-width: 576px) {
